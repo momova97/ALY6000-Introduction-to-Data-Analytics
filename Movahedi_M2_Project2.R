@@ -9,7 +9,6 @@ install.packages("dplyr")
 install.packages("plotrix")
 install.packages("ggplot2")
 install.packages("moments")
-install.packages("plotly")
 #loading installed libraries
 library(FSA)
 library(FSAdata)
@@ -18,7 +17,6 @@ library(dplyr)
 library(plotrix)
 library(ggplot2)
 library(moments)
-library(plotly)
 #loading data set
 data(BullTroutRML2)
 #showing first three lines
@@ -30,7 +28,7 @@ Harrison_Lake <- BullTroutRML2
 #cheak the structure of dataset to be able to set filter
 str(Harrison_Lake)
 #set the filter
-Harrison_Lake <- filter(Harrison_Lake, lake == "Harrison")
+Harrison_Lake <- dplyr::filter(Harrison_Lake, lake == "Harrison")
 #display first and last 5 lines
 head(Harrison_Lake, n = 5L)
 tail(Harrison_Lake, n = 5L)
@@ -65,7 +63,8 @@ p <- ggplot(data = Harrison_Lake, aes(y=age,x=fl))+
   
 # color 2d plot
 p +
-  stat_density2d(aes(color = factor(era))) + scale_colour_manual(values = c("green", "darkgreen"))
+  stat_density2d(aes(color = factor(era))) +
+  scale_colour_manual(values = c("green", "darkgreen"))
 
 #creating tmp object containing first and last 3 lines of BullTroutRML2
 tmp <- head(Harrison_Lake, n = 3L)
@@ -94,7 +93,7 @@ Overlay",
      ylim=c(0,15),xlim=c(0,500),
      pch=pchs,col=cols)+abline(lm(Harrison_Lake$age ~ Harrison_Lake$fl))
 #create plot 6
-plot(y=Harrison_Lake$age,x=Harrison_Lake$fl,main="““Plot 6: :Legend Overlay",
+plot(y=Harrison_Lake$age,x=Harrison_Lake$fl,main="Plot 6: :Legend Overlay",
      ylab="Age (yrs)",xlab="Fork Length (mm)",
      ylim=c(0,15),xlim=c(0,500),
      pch=pchs,col=cols)+abline(lm(Harrison_Lake$age ~ Harrison_Lake$fl))+
