@@ -1,2 +1,1 @@
-# ALY6000_movahedi
-#this is my personal portfolio of projects
+#this is my personal portfolio of projects for the ontroduction to Analytics course
