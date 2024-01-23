@@ -1,45 +1,36 @@
+# Executive Summary Report 3
 
-1
- 
-  
-EXECUTIVE SUMMARY REPORT 3 
-Module 3 assignment 
-Mohammad Hossein Movahedi 
-Movahedi.m@northeastern.edu 
-Abstract 
-In this assignment, I will create a summary of some data and learn how to use R 
-Introduction 
-In this summary, I will use the data from the inchBio.csv dataset and use the APA system for 
-the bibliography. Also, the R code that I used to process the data is available on my GitHub 
-account, which address is mentioned in the bibliography part. I also put my code in the 
-appendix part.  
-The objective is to firstly, Follow an introduction, provide an analysis of descriptive 
-characteristics of the data set provided by your instructor. This includes pertinent statistics 
-including counts, cumulative counts, frequency, percentages, etc. Include R console screen 
-snippets to support your observations and conclusions. Secondly, Provide the executive with 
-visualizations (at least 3) that help them see the key characteristics you want to highlight. 
-Lastly, provide a clear two to three sentences paragraph summary of the key points. 
- 
-methodology 
-1. first of all I add my name and imported libraries 
-#printing my name 
-print("mohammad Hossein Movahedi") 
-#importing and loading required libraries 
-install.packages("FSA") 
-install.packages("FSAdata") 
-install.packages("magrittr") 
-install.packages("dplyr") 
-install.packages("tidyr ") 
-install.packages("plyr") 
-install.packages("tidyverse") 
-#loading installed libraries 
-library(FSA) 
-library(FSAdata) 
-library(magrittr) 
-library(dplyr) 
-library(tidyr) 
-library(plyr) 
-library(tidyverse) 
-2. then I imported the CSV file as a table named Bio using what I learnt from (Willems, 2018) 
-#Import the inchBio.csv and name the table bio 
-bio <- read_csv("/cloud/project/inchBio.csv") 
+## Overview and Rationale
+
+This assignment was an opportunity to further develop my data analytics skills, focusing on calculating probabilities, graphing probability distributions, and interpreting data using R.
+
+## Module Objectives
+
+The objectives of this assignment were to:
+
+- Calculate counts and probabilities based on categorical data.
+- Graph probability distributions.
+- Manipulate datasets using R.
+- Interpret data displayed in graphs.
+
+## Assignment Summary
+
+The assignment involved analyzing the `inchBio.csv` dataset and creating an executive summary that included:
+
+- An introduction and methodology section.
+- Key findings about the data, supported by R console screen snippets.
+- At least three visualizations, including a mandatory pareto plot, to highlight key data characteristics.
+- A concise summary paragraph outlining the main takeaways from the analysis.
+
+## Key Findings and R Script Execution
+
+Through this assignment, I learned to:
+
+- Import and manipulate data in R, including filtering and creating subsets.
+- Calculate and display counts and percentages for categorical data.
+- Create various plots, including barplots and pareto plots, and customize their features.
+- Interpret and explain the significance of the visualizations created.
+
+## Reflection
+
+Completing this assignment has enhanced my ability to communicate complex data insights in a clear and concise manner. I've gained practical experience in using R for data manipulation and creating visualizations that can inform business decisions. The process of converting raw data into meaningful graphs and understanding their implications has been a valuable addition to my skill set as a data analyst.
