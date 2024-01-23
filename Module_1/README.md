@@ -31,12 +31,6 @@ Through this assignment, I learned to:
 - Summarize the icSales data frame, gaining insights into the sales and temperature data.
 - Import and explore variables from the `Student.csv` dataset using R functions like `str()`.
 
-## Bibliography and Appendix
-
-The assignment was informed by various resources, including online tutorials, R documentation, and the textbook "R in Action" by Kabacoff. All references were cited according to APA standards.
-
-The R script used for data processing is included in the appendix and is also available on my GitHub repository at [momova97/ALY6000_movahedi](https://github.com/momova97/ALY6000_movahedi).
-
 ## Reflection
 
 This assignment was instrumental in enhancing my data analysis skills, particularly in using R for data manipulation and visualization. I appreciated the ease with which R handles data frames compared to Python, and I'm excited to apply these skills in future data analytics projects.
