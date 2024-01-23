@@ -8,4 +8,4 @@ In these pages, you'll find insights into the foundational elements of data anal
 
 Whether you're a fellow data enthusiast, a potential employer, or simply curious about the field of data analytics, I invite you to explore my work and the progress I've made. This repository serves as both a reflection of my educational journey and a resource for those interested in the power of data analysis.
 
-# Please visit wiki page of this repo
+# Please visit [wiki page](../../wiki) of this repo
